@@ -27,6 +27,13 @@ pipeline {
     stage('Deploy') {
       steps {
         echo 'deployment completed'
+        echo 'are you sure to deploy ?'
+      }
+    }
+
+    stage('notify') {
+      steps {
+        echo 'notify deplyment finish'
       }
     }
 
