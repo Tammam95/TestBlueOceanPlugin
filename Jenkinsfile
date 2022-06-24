@@ -28,6 +28,7 @@ pipeline {
       steps {
         echo 'deployment completed'
         echo 'are you sure to deploy ?'
+        input(message: 'are you sure to deploy', ok: 'yes i assure')
       }
     }
 
